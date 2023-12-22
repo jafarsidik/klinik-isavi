@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:kode_mr",
+ "creation": "2023-12-22 14:26:42.289335",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "identitas_section",
+  "jaminan_pembayaran",
+  "noka",
+  "kode_mr",
+  "nik",
+  "nama",
+  "jenis_kelamin",
+  "tempat_lahir",
+  "tanggal_lahir",
+  "email",
+  "no_hp",
+  "foto",
+  "column_break_serr",
+  "nama_ibu_kandung",
+  "nama_gadis_ibu_kandung",
+  "status_pernikahan",
+  "pekerjaan",
+  "gol_darah",
+  "bahasa",
+  "suku",
+  "pendidikan_terakhir",
+  "agama",
+  "alamat"
+ ],
+ "fields": [
+  {
+   "fieldname": "identitas_section",
+   "fieldtype": "Section Break",
+   "label": "Identitas"
+  },
+  {
+   "fieldname": "jaminan_pembayaran",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Jaminan Pembayaran",
+   "options": "Asuransi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kode_mr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Kode MR",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "nik",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "NIK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_serr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Nomor Asuransi",
+   "fieldname": "noka",
+   "fieldtype": "Data",
+   "label": "Noka"
+  },
+  {
+   "fieldname": "jenis_kelamin",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Jenis Kelamin",
+   "options": "Laki - Laki\nPerempuan"
+  },
+  {
+   "fieldname": "tempat_lahir",
+   "fieldtype": "Data",
+   "label": "Tempat lahir"
+  },
+  {
+   "fieldname": "tanggal_lahir",
+   "fieldtype": "Date",
+   "label": "Tanggal Lahir"
+  },
+  {
+   "fieldname": "no_hp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "No HP"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "nama_ibu_kandung",
+   "fieldtype": "Data",
+   "label": "Nama Ibu Kandung"
+  },
+  {
+   "fieldname": "nama_gadis_ibu_kandung",
+   "fieldtype": "Data",
+   "label": "Nama Gadis Ibu Kandung"
+  },
+  {
+   "fieldname": "status_pernikahan",
+   "fieldtype": "Select",
+   "label": "Status Pernikahan",
+   "options": "Menikah\nLajang\nCerai Hidup\nCerai Mati"
+  },
+  {
+   "fieldname": "pekerjaan",
+   "fieldtype": "Data",
+   "label": "Pekerjaan"
+  },
+  {
+   "fieldname": "gol_darah",
+   "fieldtype": "Select",
+   "label": "Gol Darah",
+   "options": "A+\nB+\nA-\nB-\nAB\nO+\nO-"
+  },
+  {
+   "fieldname": "bahasa",
+   "fieldtype": "Select",
+   "label": "Bahasa",
+   "options": "Bahasa\nEnglish"
+  },
+  {
+   "fieldname": "suku",
+   "fieldtype": "Data",
+   "label": "Suku"
+  },
+  {
+   "fieldname": "pendidikan_terakhir",
+   "fieldtype": "Select",
+   "label": "Pendidikan Terakhir",
+   "options": "S3\nS2\nS1\nD4\nD3\nSMA/K\nSMP\nSD\nLain - Lain"
+  },
+  {
+   "fieldname": "foto",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Foto"
+  },
+  {
+   "fieldname": "alamat",
+   "fieldtype": "Small Text",
+   "label": "Alamat"
+  },
+  {
+   "fieldname": "agama",
+   "fieldtype": "Select",
+   "label": "Agama",
+   "options": "Islam\nHindu\nBudha\nKristen\nKhonghucu"
+  }
+ ],
+ "image_field": "foto",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-22 15:02:43.076003",
+ "modified_by": "Administrator",
+ "module": "Aplikasi Klinik By PT ISAVI",
+ "name": "Pasien",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "kode_mr, nik, nama",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{kode_poli}-{nama_poli}",
+ "creation": "2023-12-22 10:45:17.528785",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "poliklinik_column",
+  "kode_poli",
+  "nama_poli",
+  "kode_poli_bpjs_column",
+  "kode_poli_bpjs",
+  "nama_poli_bpjs"
+ ],
+ "fields": [
+  {
+   "fieldname": "poliklinik_column",
+   "fieldtype": "Column Break",
+   "label": "Poliklinik"
+  },
+  {
+   "fieldname": "kode_poli",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Kode Poli",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_poli",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nama Poli",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kode_poli_bpjs_column",
+   "fieldtype": "Column Break",
+   "label": "Kode Poli BPJS"
+  },
+  {
+   "fieldname": "kode_poli_bpjs",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kode Poli BPJS"
+  },
+  {
+   "fieldname": "nama_poli_bpjs",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Poli BPJS"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-22 10:48:07.761063",
+ "modified_by": "Administrator",
+ "module": "Aplikasi Klinik By PT ISAVI",
+ "name": "Poliklinik",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

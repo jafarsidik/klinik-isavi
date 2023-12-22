@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-22 14:52:39.790107",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nius",
+  "status",
+  "jenis_kunjungan",
+  "jenis_perawatan",
+  "pasien",
+  "pembiayaan",
+  "noka",
+  "column_break_xqmn",
+  "poliklinik",
+  "dokter",
+  "tanggal_berobat",
+  "amended_from",
+  "slot__jadwal_dokter_section",
+  "html_krdn"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nius",
+   "fieldtype": "Section Break",
+   "label": "Identitas"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Registrasi",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Read Only",
+   "label": "Status"
+  },
+  {
+   "fieldname": "jenis_kunjungan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Kunjungan",
+   "options": "Kunjungan Sakit\nKunjungan Sehat",
+   "reqd": 1
+  },
+  {
+   "default": "RWJ",
+   "fieldname": "jenis_perawatan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Perawatan",
+   "options": "IGD\nRWJ\nRWI\nPreventif",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pasien",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pasien",
+   "options": "Pasien",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pembiayaan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pembiayaan",
+   "options": "Asuransi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "poliklinik",
+   "fieldtype": "Link",
+   "label": "Poliklinik",
+   "options": "Poliklinik",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dokter",
+   "fieldtype": "Link",
+   "label": "Dokter",
+   "options": "Tenaga Medis",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tanggal_berobat",
+   "fieldtype": "Date",
+   "label": "Tanggal Berobat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xqmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "slot__jadwal_dokter_section",
+   "fieldtype": "Section Break",
+   "label": "Slot / Jadwal Dokter"
+  },
+  {
+   "fieldname": "html_krdn",
+   "fieldtype": "HTML"
+  },
+  {
+   "fetch_from": "pasien.noka",
+   "fieldname": "noka",
+   "fieldtype": "Data",
+   "label": "Noka"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-22 15:04:07.781353",
+ "modified_by": "Administrator",
+ "module": "Aplikasi Klinik By PT ISAVI",
+ "name": "Registrasi",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

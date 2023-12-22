@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{###}-{tenaga_medis}-{employee}",
+ "creation": "2023-12-22 11:01:37.409773",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "identitas_section",
+  "tenaga_medis",
+  "employee",
+  "column_break_ynvo",
+  "employee_number",
+  "full_name",
+  "nik",
+  "phone"
+ ],
+ "fields": [
+  {
+   "fieldname": "identitas_section",
+   "fieldtype": "Section Break",
+   "label": "Identitas"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tenaga_medis",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tenaga Medis",
+   "options": "Dokter\nPerawat\nApoteker",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ynvo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.employee",
+   "fieldname": "employee_number",
+   "fieldtype": "Read Only",
+   "label": "Employee Number"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "full_name",
+   "fieldtype": "Read Only",
+   "label": "Full Name"
+  },
+  {
+   "fetch_from": "employee.custom_nik",
+   "fieldname": "nik",
+   "fieldtype": "Read Only",
+   "label": "NIK"
+  },
+  {
+   "fetch_from": "employee.cell_number",
+   "fieldname": "phone",
+   "fieldtype": "Read Only",
+   "label": "Phone"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-22 11:09:48.574544",
+ "modified_by": "Administrator",
+ "module": "Aplikasi Klinik By PT ISAVI",
+ "name": "Tenaga Medis",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

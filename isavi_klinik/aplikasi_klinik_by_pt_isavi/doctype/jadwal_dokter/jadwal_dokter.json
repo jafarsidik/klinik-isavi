@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-22 11:12:52.979292",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "poliklinik",
+  "dokter",
+  "column_break_fneo",
+  "estimasi_dilayanai",
+  "kapasitas_pasien__slot",
+  "status_libur",
+  "jadwal_section",
+  "table_lypc"
+ ],
+ "fields": [
+  {
+   "fieldname": "poliklinik",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Poliklinik",
+   "options": "Poliklinik",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dokter",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Dokter",
+   "options": "Tenaga Medis",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fneo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Satuan dalam menit",
+   "fieldname": "estimasi_dilayanai",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Estimasi dilayanai",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "description": "Kapasitas Pasien dalam pelayanan",
+   "fieldname": "kapasitas_pasien__slot",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Kapasitas Pasien / Slot",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "status_libur",
+   "fieldtype": "Check",
+   "label": "Status Libur"
+  },
+  {
+   "fieldname": "jadwal_section",
+   "fieldtype": "Section Break",
+   "label": "Jadwal"
+  },
+  {
+   "fieldname": "table_lypc",
+   "fieldtype": "Table",
+   "options": "Child Jadwal Dokter"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-22 11:17:39.795910",
+ "modified_by": "Administrator",
+ "module": "Aplikasi Klinik By PT ISAVI",
+ "name": "Jadwal Dokter",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
