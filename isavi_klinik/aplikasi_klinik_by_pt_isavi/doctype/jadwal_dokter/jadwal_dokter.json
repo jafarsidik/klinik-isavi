@@ -7,6 +7,9 @@
  "field_order": [
   "poliklinik",
   "dokter",
+  "hari",
+  "jam_buka",
+  "jam_tutup",
   "column_break_fneo",
   "estimasi_dilayanai",
   "kapasitas_pasien__slot",
@@ -60,18 +63,40 @@
   },
   {
    "fieldname": "jadwal_section",
-   "fieldtype": "Section Break",
-   "label": "Jadwal"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "table_lypc",
    "fieldtype": "Table",
-   "options": "Child Jadwal Dokter"
+   "label": "Slot",
+   "options": "Child Slot Jadwal Dokter"
+  },
+  {
+   "fieldname": "hari",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Hari",
+   "options": "Senin\nSelasa\nRabu\nKamis\nJumat\nSabtu\nMinggu",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jam_buka",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Jam Buka",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jam_tutup",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Jam Tutup",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-22 11:17:39.795910",
+ "modified": "2023-12-22 20:35:13.622394",
  "modified_by": "Administrator",
  "module": "Aplikasi Klinik By PT ISAVI",
  "name": "Jadwal Dokter",
@@ -90,6 +115,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

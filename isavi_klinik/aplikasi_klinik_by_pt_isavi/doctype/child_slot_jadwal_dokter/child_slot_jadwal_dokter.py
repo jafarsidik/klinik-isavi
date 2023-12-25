@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class ChildJadwalDokter(Document):
+class ChildSlotJadwalDokter(Document):
 	pass
